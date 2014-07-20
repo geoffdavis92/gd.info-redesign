@@ -1,0 +1,75 @@
+/* ALSAC Folder Code Geoff Davis 2014 1450x16*/
+/* My Red #BB0022*/
+body{
+  background-color: #f5f5f5;
+  font-family: 'arial medium',sans-serif;
+}
+
+h1, h2, h3, section, article, p, ul, li, a{
+  /*transition-timing-function: linear;*/
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+ul{
+
+  background-color:#9D2042;
+  list-style:none;
+  margin-left:2.25%;
+  width: 90%;
+  text-align:center;
+  border-bottom:#9D2042 solid 1.5px;
+  /*background-color:#BB0022;*/
+}
+
+li{
+  display: inline-block;
+  border-bottom:transparent solid 5px;
+  padding: .25% 1.5% .5% 1.5%; /*top right bottom left*/
+}
+  li:hover{
+    border-bottom:white solid 5px;
+    /*transition-timing-function:linear;*/
+    -webkit-transition: all .37s;
+    -moz-transition: all .37s;
+    -o-transition: all .37s;
+  }
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+  footer a{
+    color:#bbb;
+  }
+  footer a:hover{
+    color:#888;
+    transition: all .37s;
+  }
+
+div#content{
+  width: 65%;
+  margin: 0 10% auto 10%;
+  background-color: white;
+  padding: 1.25% 7.5% 1.25% 7.5%;
+  border: solid 2px #f2f2f2;
+  border-radius: 10px;
+  color: #3b3b3b;
+  font-size:1em;
+}
+
+#content h2{
+    color: #4e4e4e;
+}
+#content p{
+  margin-left: 1%;
+}
+#content a:hover{
+  color:#b9b9b9;
+  text-decoration: dotted;
+}
+#content #alsac-source{
+  font-size:.67em;
+  color: #979797;
+}
