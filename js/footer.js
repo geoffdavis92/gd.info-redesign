@@ -18,6 +18,7 @@ function createF(){
   cFA.appendChild(footLink);
 
     function styleF(){
+      cFoot.style.fontFamily = "Droid Sans, Helvetica, sans-serif";
       cFoot.style.width = "100%";
       cFoot.style.textAlign = "center";
       cFoot.style.marginTop = "2.5%";

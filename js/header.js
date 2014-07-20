@@ -18,6 +18,7 @@ function createH(){
   cHead.appendChild(cH1);
   var cH1Text = document.createTextNode("Geoff Davis");
   cH1.appendChild(cH1Text);
+  cH1.setAttribute("id","siteH1");
 
   //Create Nav Ul
   cHead.appendChild(cNav);
@@ -38,19 +39,33 @@ function createH(){
   // Create and Link Anchors
   var nUlLiA1 = document.createElement("a");
   nUlLi1.appendChild(nUlLiA1);
-  nUlLiA1.setAttribute("href","../gd.info-redesign/index.html"); //main index
+
+  if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/index.html") {
+    nUlLiA1.setAttribute("href","../gd.info-redesign/index.html");
+    }
+  else{
+    nUlLiA1.setAttribute("href","../index.html");
+  }
+
   nUlLiA1.setAttribute("id","a1");
   var nUlLiA2 = document.createElement("a");
   nUlLi2.appendChild(nUlLiA2);
-  nUlLiA2.setAttribute("href","../gd.info-redesign/about.html"); //about page
+
+  if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/about.html"){
+    nUlLiA2.setAttribute("href","../gd.info-redesign/about.html"); //about page
+  }
+  else{
+    nUlLiA2.setAttribute("href","../about.html");
+  }
+
   nUlLiA2.setAttribute("id","a2");
   var nUlLiA3 = document.createElement("a");
   nUlLi3.appendChild(nUlLiA3);
-  nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/"); //internship index
+  nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/index.html"); //internship index
   nUlLiA3.setAttribute("id","a3");
   var nUlLiA4 = document.createElement("a");
   nUlLi4.appendChild(nUlLiA4);
-  nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/"); //portfolio index
+  nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/index.html"); //portfolio index
   nUlLiA4.setAttribute("id","a3");
 
   // Create Anchor Text
@@ -72,7 +87,13 @@ function createH(){
     }
 
   function styleH(){
-    cHead.style.fontFamily = "Helvetica, monospace";
+    var getH1 = document.getElementById("siteH1");
+
+    getH1.style.fontSize = "5em";
+    getH1.style.marginBottom = "-1.25%";
+    getH1.style.marginTop = "1.25%";
+    getH1.style.fontFamily = "Droid Serif, Droid Sans Mono, monospace";
+    cHead.style.fontFamily = "Droid Sans, monospace";
     cHead.style.color = "#ffffff";
     cHead.style.width = "80%";
     cHead.style.marginLeft = "10%";
