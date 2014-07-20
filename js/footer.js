@@ -13,13 +13,14 @@ function createF(){
   cFoot.appendChild(cFL);
 
   document.body.cFA;
-  cFoot.appendChild(cFA).setAttribute("href","../");
-  var footLink = document.createTextNode("return to geoffdavis.info");
+  cFoot.appendChild(cFA).setAttribute("href","../gd.info-redesign/");
+  var footLink = document.createTextNode("2014 Geoffrey Davis");
   cFA.appendChild(footLink);
 
     function styleF(){
       cFoot.style.width = "100%";
       cFoot.style.textAlign = "center";
+      cFoot.style.marginTop = "2.5%";
       cFL.style.width = "80%";
       cFL.style.height = "2px";
       cFL.style.backgroundColor = "#ddd";

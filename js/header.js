@@ -38,19 +38,20 @@ function createH(){
   // Create and Link Anchors
   var nUlLiA1 = document.createElement("a");
   nUlLi1.appendChild(nUlLiA1);
-  nUlLiA1.setAttribute("href","index.html"); //main index
+  nUlLiA1.setAttribute("href","../gd.info-redesign/index.html"); //main index
   nUlLiA1.setAttribute("id","a1");
   var nUlLiA2 = document.createElement("a");
   nUlLi2.appendChild(nUlLiA2);
-  nUlLiA2.setAttribute("href","about.html"); //about page
+  nUlLiA2.setAttribute("href","../gd.info-redesign/about.html"); //about page
   nUlLiA2.setAttribute("id","a2");
   var nUlLiA3 = document.createElement("a");
   nUlLi3.appendChild(nUlLiA3);
-  nUlLiA3.setAttribute("href","/alsac/"); //internship index
+  nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/"); //internship index
   nUlLiA3.setAttribute("id","a3");
   var nUlLiA4 = document.createElement("a");
   nUlLi4.appendChild(nUlLiA4);
-  nUlLiA4.setAttribute("href","/portfolio/"); //portfolio index
+  nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/"); //portfolio index
+  nUlLiA4.setAttribute("id","a3");
 
   // Create Anchor Text
   var a1Text = document.createTextNode("Home");
@@ -60,7 +61,7 @@ function createH(){
   var a3Text = document.createTextNode("Internship");
   nUlLiA3.appendChild(a3Text);
   var a4Text = document.createTextNode("Portfolio");
-  nULiA4.appendChild(a4Text);
+  nUlLiA4.appendChild(a4Text);
 
   function styleNav(){
     // cNav = nav element
