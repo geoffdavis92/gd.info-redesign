@@ -1,5 +1,12 @@
 // ALSAC Folder - Header JavaScript
 
+// ADD:
+
+// About
+// Internship
+// Portfolio
+// Resum&acutee;
+
 var cHA = document.createElement("a");
 var cHead = document.createElement("header");
 var cNav = document.createElement("nav");
@@ -9,7 +16,7 @@ function createH(){
   document.body.appendChild(cHead);
   var cH1 = document.createElement("h1");
   cHead.appendChild(cH1);
-  var cH1Text = document.createTextNode("Geoff Davis @ ALSAC");
+  var cH1Text = document.createTextNode("Geoff Davis");
   cH1.appendChild(cH1Text);
 
   //Create Nav Ul
@@ -25,28 +32,36 @@ function createH(){
   nUl.appendChild(nUlLi2);
   var nUlLi3 = document.createElement("li");
   nUl.appendChild(nUlLi3);
+  var nUlLi4 = document.createElement("li");
+  nUl.appendChild(nUlLi4);
 
   // Create and Link Anchors
   var nUlLiA1 = document.createElement("a");
   nUlLi1.appendChild(nUlLiA1);
-  nUlLiA1.setAttribute("href","http://geoffdavis.info/alsac/index.html"); //main index
+  nUlLiA1.setAttribute("href","../gd.info-redesign/index.html"); //main index
   nUlLiA1.setAttribute("id","a1");
   var nUlLiA2 = document.createElement("a");
   nUlLi2.appendChild(nUlLiA2);
-  nUlLiA2.setAttribute("href","http://geoffdavis.info/alsac/intern/index.html"); //internship index
+  nUlLiA2.setAttribute("href","../gd.info-redesign/about.html"); //about page
   nUlLiA2.setAttribute("id","a2");
   var nUlLiA3 = document.createElement("a");
   nUlLi3.appendChild(nUlLiA3);
-  nUlLiA3.setAttribute("href","http://geoffdavis.info/alsac/projects/index.html"); //project index
+  nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/"); //internship index
   nUlLiA3.setAttribute("id","a3");
+  var nUlLiA4 = document.createElement("a");
+  nUlLi4.appendChild(nUlLiA4);
+  nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/"); //portfolio index
+  nUlLiA4.setAttribute("id","a3");
 
   // Create Anchor Text
   var a1Text = document.createTextNode("Home");
   nUlLiA1.appendChild(a1Text);
-  var a2Text = document.createTextNode("Internship");
+  var a2Text = document.createTextNode("About");
   nUlLiA2.appendChild(a2Text);
-  var a3Text = document.createTextNode("Projects");
+  var a3Text = document.createTextNode("Internship");
   nUlLiA3.appendChild(a3Text);
+  var a4Text = document.createTextNode("Portfolio");
+  nUlLiA4.appendChild(a4Text);
 
   function styleNav(){
     // cNav = nav element

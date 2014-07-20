@@ -1,5 +1,7 @@
-/* ALSAC Folder Code Geoff Davis 2014 1450x16*/
+/* Code Geoff Davis 2014 1450x16*/
 /* My Red #BB0022*/
+
+
 body{
   background-color: #f5f5f5;
   font-family: 'arial medium',sans-serif;
@@ -14,12 +16,12 @@ h1, h2, h3, section, article, p, ul, li, a{
 
 ul{
 
-  background-color:#9D2042;
+  /*background-color:#9D2042;*/
   list-style:none;
-  margin-left:2.25%;
+  /*margin-left:2.25%;*/
   width: 90%;
   text-align:center;
-  border-bottom:#9D2042 solid 1.5px;
+  border-bottom:transparent solid 1.5px;
   /*background-color:#BB0022;*/
 }
 
