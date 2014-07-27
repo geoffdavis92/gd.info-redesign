@@ -39,33 +39,42 @@ function createH(){
   // Create and Link Anchors
   var nUlLiA1 = document.createElement("a");
   nUlLi1.appendChild(nUlLiA1);
-
   if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/index.html") {
     nUlLiA1.setAttribute("href","../gd.info-redesign/index.html");
     }
   else{
     nUlLiA1.setAttribute("href","../index.html");
   }
-
   nUlLiA1.setAttribute("id","a1");
+
   var nUlLiA2 = document.createElement("a");
   nUlLi2.appendChild(nUlLiA2);
-
   if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/about.html"){
     nUlLiA2.setAttribute("href","../gd.info-redesign/about.html"); //about page
   }
   else{
     nUlLiA2.setAttribute("href","../about.html");
   }
-
   nUlLiA2.setAttribute("id","a2");
+
   var nUlLiA3 = document.createElement("a");
   nUlLi3.appendChild(nUlLiA3);
-  nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/index.html"); //internship index
+  if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/alsac/index.html"){
+    nUlLiA3.setAttribute("href","../alsac/index.html");
+  }
+  else{
+    nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/index.html");
+  }
   nUlLiA3.setAttribute("id","a3");
+
   var nUlLiA4 = document.createElement("a");
   nUlLi4.appendChild(nUlLiA4);
-  nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/index.html"); //portfolio index
+  if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/portfolio/index.html"){
+    nUlLiA4.setAttribute("href","../portfolio/index.html");
+  }
+  else{
+    nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/index.html");
+  }
   nUlLiA4.setAttribute("id","a3");
 
   // Create Anchor Text
