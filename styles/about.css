@@ -7,9 +7,23 @@
 section#contact span#glyph {
   font-family: 'symbols', monospace;
   margin-right: 15px; }
-section#contact p#phone {
-  display: none; }
 
-@media (max-width: 400px) {
-  p#phone {
-    display: visible; } }
+@media (max-width: 425px){
+  header ul{
+    width: 55%;
+    margin-left:10%;
+    font-size: 1.5em;
+    /*text-align: left;*/
+  }
+  div#content{
+    width:85%;
+    margin-left:0;
+    font-size: 1.25em;
+  }
+  div#content h2{
+    text-align: center;
+  }
+  div#content button{
+    font-size: 1em;
+  }
+}

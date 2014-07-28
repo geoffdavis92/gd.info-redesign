@@ -61,15 +61,23 @@ div#content {
   div#content a:hover {
     color: #b9b9b9;
     text-decoration: dotted; }
+  div#content a:active {
+    color: #0b536a;
+    border-color: #0b536a; }
   div#content #source {
     font-size: .67em;
     color: #979797; }
   div#content button {
     border-radius: 10px;
     background-color: white;
-    color: #0b536a;
     padding: 6.66667px;
-    border: 2px #0b536a solid; }
+    border: 2px #3b3b3b solid; }
+  div#content button:hover {
+    border-color: #24bae9;
+    color: #24bae9; }
+  div#content button:active {
+    color: #0b536a;
+    border-color: #0b536a; }
 
 footer a {
   color: #bbb; }

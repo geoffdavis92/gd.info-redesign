@@ -11,11 +11,11 @@
 
 section#contact{
   span#glyph{font-family: 'symbols', monospace; margin-right: 15px;}
-  p#phone{display: none;}
+//  p#phone{display: none;}
 }
 
-@media (max-width: 400px){
-    p#phone{
-      display:visible;
-    }
-}
+// @media screen and (max-width: 400px){
+//     p#phone{
+//       display:visible !important;
+//     }
+// }

@@ -14,6 +14,7 @@ $site-md-blue: #0B536A;
 $site-mustard: #AAA234;
 
 $content-bg: white;
+$content-color: #3b3b3b;
 $sec-mar-btm: 50px;
 $brdr-rds: 10px;
 
@@ -37,9 +38,13 @@ $value-lighter: 50%;
 }
 
 @mixin content-active(){
-
+  color: $site-md-blue;
+  border-color: $site-md-blue;
 }
-@mixin btn-hover(){}
+@mixin btn-hover(){
+  border-color: $site-lt-blue;
+  color: $site-lt-blue;
+}
 
 @mixin footer-active($lighter, $lighter-value){
   border-color: $site-mustard;
@@ -95,7 +100,7 @@ div#content{
   padding: 1.25% 7.5% 1.25% 7.5%;
   border: solid 2px #f2f2f2;
   border-radius: $brdr-rds;
-  color: #3b3b3b;
+  color: $content-color;
   font-size:1em;
 
   section{
@@ -122,9 +127,9 @@ div#content{
   button{
     border-radius: $brdr-rds;
     background-color: $content-bg;
-    color: $site-md-blue;
+    // color: $site-md-blue;
     padding: $brdr-rds/1.5;
-    border: 2px $site-md-blue solid;
+    border: 2px $content-color solid;
   }
   button:hover{
     @include btn-hover;
