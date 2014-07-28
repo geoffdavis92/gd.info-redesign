@@ -1,18 +1,43 @@
 /* Code Geoff Davis 2014 */
 
-/* Imports Droid (Mono, Sans, Serif) from Google Fonts */
+// IMPORTS
+
+// Imports Droid (Mono, Sans, Serif) from Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic);
+@import 'fonts';
+
+// Variables
+$bg-color: #f5f5f5;
+
+// Mixins
+
+@mixin transition-base(){
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+@mixin transition-hover(){
+  transition: all .37s;
+  -webkit-transition: all .37s;
+  -moz-transition: all .37s;
+  -o-transition: all .37s;
+}
+
+// Styles
+
+@font-face{
+  @include symbols;
+}
 
 body{
-  background-color: #f5f5f5;
+  background-color: $bg-color;
   font-family: 'Droid Sans','Droid Sans Mono',sans-serif;
 }
 
 h1, h2, h3, section, article, p, ul, li, a{
-  /*transition-timing-function: linear;*/
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
+@include transition-base;
 }
 
 ul{
@@ -32,11 +57,8 @@ li{
   font-size: 1.25em;
 }
   li:hover{
-    border-bottom: #f5f5f5 solid 5px;
-    /*transition-timing-function:linear;*/
-    -webkit-transition: all .37s;
-    -moz-transition: all .37s;
-    -o-transition: all .37s;
+    border-bottom: $bg-color solid 5px;
+    @include transition-hover;
   }
 
 a{
@@ -48,7 +70,7 @@ a{
   }
   footer a:hover{
     color:#888;
-    transition: all .37s;
+    @include transition-hover;
   }
 
 div#content{
@@ -60,20 +82,20 @@ div#content{
   border-radius: 10px;
   color: #3b3b3b;
   font-size:1em;
-}
 
-div#content h2{
-    color: #4e4e4e;
-    font-size: 1.75em;
-}
-div#content p{
-  margin-left: 1%;
-}
-div#content a:hover{
-  color:#b9b9b9;
-  text-decoration: dotted;
-}
-div#content #source{
-  font-size:.67em;
-  color: #979797;
+  h2{
+      color: #4e4e4e;
+      font-size: 1.75em;
+  }
+  p{
+    margin-left: 1%;
+  }
+  a:hover{
+    color:#b9b9b9;
+    text-decoration: dotted;
+  }
+  #source{
+    font-size:.67em;
+    color: #979797;
+  }
 }

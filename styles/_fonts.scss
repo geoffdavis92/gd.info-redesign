@@ -1,0 +1,23 @@
+// Fonts partial
+
+@mixin bebasneue(){
+    font-family: 'bebas_neue';
+    src: url('bebasNeueFont/BebasNeue-webfont.eot');
+    src: url('bebasNeueFont/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+         url('bebasNeueFont/BebasNeue-webfont.woff') format('woff'),
+         url('bebasNeueFont/BebasNeue-webfont.ttf') format('truetype'),
+         url('bebasNeueFont/BebasNeue-webfont.svg#bebas_neueregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@mixin symbols(){
+      font-family: 'symbols';
+      src: url('webSymbolsFont/symbols4web-webfont.eot');
+      src: url('webSymbolsFont/symbols4web-webfont.eot?#iefix') format('embedded-opentype'),
+           url('webSymbolsFont/symbols4web-webfont.woff') format('woff'),
+           url('webSymbolsFont/symbols4web-webfont.ttf') format('truetype'),
+           url('webSymbolsFont/symbols4web-webfont.svg#web_symbolsregular') format('svg');
+      font-weight: normal;
+      font-style: normal;
+}
