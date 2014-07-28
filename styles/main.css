@@ -9,8 +9,11 @@
 body {
   background-color: whitesmoke;
   font-family: 'Droid Sans','Droid Sans Mono',sans-serif; }
+  body a {
+    text-decoration: none;
+    color: inherit; }
 
-h1, h2, h3, section, article, p, ul, li, a {
+h1, h2, h3, section, article, p, ul, li, a, button {
   transition: all .5s;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -39,20 +42,6 @@ li:hover {
   -moz-transition: all .37s;
   -o-transition: all .37s; }
 
-a {
-  text-decoration: none;
-  color: inherit; }
-
-footer a {
-  color: #bbb; }
-
-footer a:hover {
-  color: #888;
-  transition: all .37s;
-  -webkit-transition: all .37s;
-  -moz-transition: all .37s;
-  -o-transition: all .37s; }
-
 div#content {
   width: 65%;
   margin: 0 10% auto 10%;
@@ -62,6 +51,8 @@ div#content {
   border-radius: 10px;
   color: #3b3b3b;
   font-size: 1em; }
+  div#content section {
+    margin-bottom: 50px; }
   div#content h2 {
     color: #4e4e4e;
     font-size: 1.75em; }
@@ -73,3 +64,21 @@ div#content {
   div#content #source {
     font-size: .67em;
     color: #979797; }
+  div#content button {
+    border-radius: 10px;
+    background-color: white;
+    color: #0b536a;
+    padding: 6.66667px;
+    border: 2px #0b536a solid; }
+
+footer a {
+  color: #bbb; }
+footer a:hover {
+  color: #888;
+  transition: all .37s;
+  -webkit-transition: all .37s;
+  -moz-transition: all .37s;
+  -o-transition: all .37s; }
+footer a:active {
+  border-color: #aaa234;
+  color: #aaa234; }

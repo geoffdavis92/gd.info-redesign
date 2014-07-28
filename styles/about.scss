@@ -1,0 +1,21 @@
+// ABOUT :: Code Geoff Davis 2014
+
+// Imports
+@import 'fonts';
+
+// Styles
+
+@font-face{
+  @include symbols;
+}
+
+section#contact{
+  span#glyph{font-family: 'symbols', monospace; margin-right: 15px;}
+  p#phone{display: none;}
+}
+
+@media (max-width: 400px){
+    p#phone{
+      display:visible;
+    }
+}
