@@ -1,0 +1,74 @@
+// HOME :: Code Geoff Davis 2014
+
+// IMPORTS
+@import 'fonts';
+@import 'fontcolors';
+
+// MIXINS
+
+@mixin transition-base(){
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+@mixin transition-hover(){
+  transition: all .37s;
+  -webkit-transition: all .37s;
+  -moz-transition: all .37s;
+  -o-transition: all .37s;
+}
+
+@mixin para-emphasis($bg-color,$font-color){
+  padding-left: 10px;
+  background-color: $bg-color;
+  color: $font-color;
+  border-radius: 10px;
+}
+
+// STYLES
+
+span#pseudo4{
+  display:inline;
+  -webkit-margin-before: 1.33em;
+  -webkit-margin-after: 1.33em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
+}
+
+div#content{
+  span#glyph{font-family: 'symbols', monospace; margin-right: 7px;}
+  h3{
+    margin-bottom: 2.75%;
+  }
+  p#html, p#css, p#js, p#type{
+    @include transition-base;
+    border-radius: 10px;
+    padding: 5px;
+    cursor: default;
+    width: 75%;
+    margin-top: -1.25%;
+    span#desc{
+      line-height: 1.5em;
+    }
+  }
+  p#html:hover{
+    // font-size: 1.25em;
+    @include para-emphasis($site-red,white);
+    @include transition-hover;
+  }
+  p#css:hover{
+    @include para-emphasis($site-lt-blue,white);
+    @include transition-hover;
+  }
+  p#js:hover{
+    @include para-emphasis($site-mustard,white);
+    @include transition-hover;
+  }
+  p#type:hover{
+    @include para-emphasis(#3b3b3b,white);
+    @include transition-hover;
+  }
+}

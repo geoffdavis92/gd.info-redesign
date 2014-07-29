@@ -9,6 +9,7 @@
 // Variables
 $bg-color: #f5f5f5;
 $site-red: #9D2042; //TRIAD Scheme :: #50081C (dark red) | #24BAE9 (Light blue) | #0B536A (med blue) | #AAA234 (mustard)
+$site-dk-red: #50081C;
 $site-lt-blue: #24BAE9;
 $site-md-blue: #0B536A;
 $site-mustard: #AAA234;
@@ -58,12 +59,15 @@ $value-lighter: 50%;
 }
 
 body{
+  overflow-y: scroll;
   background-color: $bg-color;
   font-family: 'Droid Sans','Droid Sans Mono',sans-serif;
+}
 
+header{
   a{
-    text-decoration: none;
     color: inherit;
+    text-decoration: none;
   }
 }
 
@@ -113,8 +117,12 @@ div#content{
   p{
     margin-left: 1%;
   }
+  a{
+    text-decoration: none;
+    color: #5e5e5e;
+  }
   a:hover{
-    color:#b9b9b9;
+    color:#c9c9c9;
     text-decoration: dotted;
   }
   a:active{
@@ -143,6 +151,7 @@ div#content{
 footer{
   a{
     color:#bbb;
+    text-decoration:none;
   }
   a:hover{
     color:#888;

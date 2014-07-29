@@ -1,0 +1,43 @@
+// ABOUT :: Code Geoff Davis 2014
+
+// Imports
+@import 'fonts';
+@import 'fontcolors';
+
+@mixin transition-base(){
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+@mixin transition-hover(){
+  transition: all .37s;
+  -webkit-transition: all .37s;
+  -moz-transition: all .37s;
+  -o-transition: all .37s;
+}
+
+@mixin content-active(){
+  color: $site-md-blue;
+  border-color: $site-md-blue;
+}
+
+// Styles
+
+@font-face{
+  @include symbols;
+}
+
+div#content{
+  a{
+    color: $site-dk-red;
+  }
+  a:hover{
+    color: $site-red;
+  }
+  a:active{
+    @include content-active;
+  }
+  span#glyph{font-family: 'symbols', monospace; margin-right: 7px;}
+}
