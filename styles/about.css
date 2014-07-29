@@ -4,26 +4,46 @@
   src: url("webSymbolsFont/symbols4web-webfont.eot?#iefix") format("embedded-opentype"), url("webSymbolsFont/symbols4web-webfont.woff") format("woff"), url("webSymbolsFont/symbols4web-webfont.ttf") format("truetype"), url("webSymbolsFont/symbols4web-webfont.svg#web_symbolsregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-section#contact span#glyph {
-  font-family: 'symbols', monospace;
-  margin-right: 15px; }
-
-@media (max-width: 425px){
-  header ul{
-    width: 55%;
-    margin-left:10%;
-    font-size: 1.5em;
-    /*text-align: left;*/
-  }
-  div#content{
-    width:85%;
-    margin-left:0;
-    font-size: 1.25em;
-  }
-  div#content h2{
-    text-align: center;
-  }
-  div#content button{
-    font-size: 1em;
-  }
-}
+section#contact {
+  /*p#phone:hover{
+    @include para-emphasis($site-dk-red,white);
+    a{color:white;}
+  }*/ }
+  section#contact span#glyph {
+    font-family: 'symbols', monospace;
+    margin-right: 15px; }
+  section#contact p#name, section#contact p#email, section#contact p#lkIn, section#contact p#inst, section#contact p#twtr {
+    margin-bottom: -.65%;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    width: 22.5%; }
+  section#contact p#phone {
+    display: hidden; }
+  section#contact p#email:hover {
+    padding-left: 10px;
+    background-color: #3b3b3b;
+    color: white;
+    border-radius: 10px; }
+    section#contact p#email:hover a {
+      color: white; }
+  section#contact p#lkIn:hover {
+    padding-left: 10px;
+    background-color: #0b536a;
+    color: white;
+    border-radius: 10px; }
+    section#contact p#lkIn:hover a {
+      color: white; }
+  section#contact p#inst:hover {
+    padding-left: 10px;
+    background-color: #aaa234;
+    color: white;
+    border-radius: 10px; }
+    section#contact p#inst:hover a {
+      color: white; }
+  section#contact p#twtr:hover {
+    padding-left: 10px;
+    background-color: #24bae9;
+    color: white;
+    border-radius: 10px; }
+    section#contact p#twtr:hover a {
+      color: white; }

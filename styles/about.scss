@@ -2,6 +2,8 @@
 
 // Imports
 @import 'fonts';
+@import 'fontcolors';
+@import 'hover-emphasis';
 
 // Styles
 
@@ -11,11 +13,33 @@
 
 section#contact{
   span#glyph{font-family: 'symbols', monospace; margin-right: 15px;}
-//  p#phone{display: none;}
+  p#name, p#email, p#lkIn, p#inst, p#twtr{
+    margin-bottom: -.65%;
+    padding-top:3px;
+    padding-bottom:3px;
+    width: 22.5%;
+  }
+  p#phone{
+    display: hidden;
+  }
+  /*p#phone:hover{
+    @include para-emphasis($site-dk-red,white);
+    a{color:white;}
+  }*/
+  p#email:hover{
+    @include para-emphasis($content-color,white);
+    a{color:white;}
+  }
+  p#lkIn:hover{
+    @include para-emphasis($site-md-blue,white);
+    a{color:white;}
+  }
+  p#inst:hover{
+    @include para-emphasis($site-mustard,white);
+    a{color:white;}
+  }
+  p#twtr:hover{
+    @include para-emphasis($site-lt-blue,white);
+    a{color:white;}
+  }
 }
-
-// @media screen and (max-width: 400px){
-//     p#phone{
-//       display:visible !important;
-//     }
-// }

@@ -1,0 +1,22 @@
+// MIXINS
+
+@mixin transition-base(){
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+@mixin transition-hover(){
+  transition: all .37s;
+  -webkit-transition: all .37s;
+  -moz-transition: all .37s;
+  -o-transition: all .37s;
+}
+
+@mixin para-emphasis($bg-color,$font-color){
+  padding-left: 10px;
+  background-color: $bg-color;
+  color: $font-color;
+  border-radius: 10px;
+}

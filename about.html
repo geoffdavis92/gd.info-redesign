@@ -12,7 +12,31 @@
   <link href="styles/main.css" rel="stylesheet" type="text/css">
   <link href="styles/about.css" rel="stylesheet" type="text/css">
   <!-- <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet"> -->
-
+  <style>
+  @media (max-width: 400px) {
+  p#phone {
+    display: visible; }
+    }
+    @media (max-width: 425px){
+  header ul{
+    width: 55%;
+    margin-left:10%;
+    font-size: 1.5em;
+    /*text-align: left;*/
+  }
+  div#content{
+    width:85%;
+    margin-left:0;
+    font-size: 1.25em;
+  }
+  div#content h2{
+    text-align: center;
+  }
+  div#content button{
+    font-size: 1em;
+  }
+}
+    </style>
 </head>
 <body >
 <script>createH();</script>
@@ -39,9 +63,9 @@
       <h3>Contact Information</h3>
       <p id="name"><span id="glyph">U</span>&#9;Geoffrey Davis</p>
       <p id="phone"><script>showPhone()</script></p>
-      <p id="email"><span id="glyph">@</span><a href="mailto:geoffdavis92@gmail.com">Send me an Email!</a></p>
+      <p id="email"><span id="glyph" style="font-size:.9em;padding-bottom:1px;">@</span><a href="mailto:geoffdavis92@gmail.com">Send me an Email!</a></p>
       <p id="lkIn"><span id="glyph">l</span><a href="https://www.linkedin.com/pub/geoff-davis/65/4b3/579">&#9;Let's get Linked!</a></p>
-      <p id="inst"><span id="glyph" style="font-size:.9em;">I</span><a href="http://www.instagram.com/geoffdavis">My Photostream</a></p>
+      <p id="inst"><span id="glyph" style="font-size:.85em;">I</span><a href="http://www.instagram.com/geoffdavis">My Photostream</a></p>
       <p id="twtr"><span id="glyph">t</span><a href="https://twitter.com/gdavis92" class="twitter-follow-button" data-show-count="false" data-lang="en">&#9;Follow @gdavis92</a>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></p>
     </section>
