@@ -21,31 +21,31 @@ div#content{
   h3{
     margin-bottom: 2.75%;
   }
-  p#html, p#css, p#js, p#type{
+  article#html, article#css, article#js, article#type{
     @include transition-base;
     border-radius: 10px;
     padding: 5px;
     cursor: default;
     width: 75%;
-    margin-top: -1.25%;
-    span#desc{
+    margin-top: 1%;
+    p#desc{
       line-height: 1.5em;
     }
   }
-  p#html:hover{
+  article#html:hover{
     // font-size: 1.25em;
     @include para-emphasis($site-red,white);
     @include transition-hover;
   }
-  p#css:hover{
+  article#css:hover{
     @include para-emphasis($site-lt-blue,white);
     @include transition-hover;
   }
-  p#js:hover{
+  article#js:hover{
     @include para-emphasis($site-mustard,white);
     @include transition-hover;
   }
-  p#type:hover{
+  article#type:hover{
     @include para-emphasis(#3b3b3b,white);
     @include transition-hover;
   }

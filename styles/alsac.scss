@@ -1,0 +1,47 @@
+// Imports
+
+@import 'fonts';
+@import 'fontcolors';
+@import 'hover-emphasis';
+
+// MIXINS
+
+// STYLES
+aside{
+  position: fixed;
+  width: 9.5%;
+  border-right: 3px $site-red solid;
+  font-size: .75em;
+  margin-left: -1.25%;
+
+  ul{
+    text-indent: none;
+    margin-left: -16.5%;
+    text-align: right;
+
+  a{
+    color: $content-color;
+    text-decoration: none;
+
+      li{
+        @include transition-base;
+        border-right: transparent 3px solid;
+        border-bottom: none;
+        margin: 5px 0 5px 10px;
+        padding-right: 10px;
+      }
+      li:hover{
+        @include transition-hover;
+        color: #c9c9c9;
+        border-right: $bg-color 3px solid;
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+div#content{
+  p{
+    line-height: 1.5em;
+  }
+}

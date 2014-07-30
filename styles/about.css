@@ -4,6 +4,9 @@
   src: url("webSymbolsFont/symbols4web-webfont.eot?#iefix") format("embedded-opentype"), url("webSymbolsFont/symbols4web-webfont.woff") format("woff"), url("webSymbolsFont/symbols4web-webfont.ttf") format("truetype"), url("webSymbolsFont/symbols4web-webfont.svg#web_symbolsregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+section#bio {
+  line-height: 1.5em; }
+
 section#contact {
   /*p#phone:hover{
     @include para-emphasis($site-dk-red,white);
@@ -13,6 +16,10 @@ section#contact {
     font-family: 'symbols', monospace;
     margin-right: 15px; }
   section#contact p#name, section#contact p#email, section#contact p#lkIn, section#contact p#inst, section#contact p#twtr {
+    transition: all .5s;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
     margin-bottom: -.65%;
     padding-top: 3px;
     padding-bottom: 3px;

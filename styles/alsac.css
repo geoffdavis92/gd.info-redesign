@@ -1,0 +1,33 @@
+aside {
+  position: fixed;
+  width: 9.5%;
+  border-right: 3px #9d2042 solid;
+  font-size: .75em;
+  margin-left: -1.25%; }
+  aside ul {
+    text-indent: none;
+    margin-left: -16.5%;
+    text-align: right; }
+    aside ul a {
+      color: #3b3b3b;
+      text-decoration: none; }
+      aside ul a li {
+        transition: all .5s;
+        -webkit-transition: all .5s;
+        -moz-transition: all .5s;
+        -o-transition: all .5s;
+        border-right: transparent 3px solid;
+        border-bottom: none;
+        margin: 5px 0 5px 10px;
+        padding-right: 10px; }
+      aside ul a li:hover {
+        transition: all .37s;
+        -webkit-transition: all .37s;
+        -moz-transition: all .37s;
+        -o-transition: all .37s;
+        color: #c9c9c9;
+        border-right: whitesmoke 3px solid;
+        border-bottom: none; }
+
+div#content p {
+  line-height: 1.5em; }

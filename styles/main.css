@@ -14,8 +14,13 @@ body {
 header a {
   color: inherit;
   text-decoration: none; }
+header li {
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s; }
 
-h1, h2, h3, section, article, p, ul, li, a, button {
+h1, h2, h3, section, article, ul, a, button {
   transition: all .5s;
   -webkit-transition: all .5s;
   -moz-transition: all .5s;
@@ -38,11 +43,7 @@ li {
   font-size: 1.25em; }
 
 li:hover {
-  border-bottom: whitesmoke solid 5px;
-  transition: all .37s;
-  -webkit-transition: all .37s;
-  -moz-transition: all .37s;
-  -o-transition: all .37s; }
+  border-bottom: whitesmoke solid 5px; }
 
 div#content {
   width: 65%;
@@ -62,7 +63,7 @@ div#content {
     margin-left: 1%; }
   div#content a {
     text-decoration: none;
-    color: #5e5e5e; }
+    color: #9d2042; }
   div#content a:hover {
     color: #c9c9c9;
     text-decoration: dotted; }

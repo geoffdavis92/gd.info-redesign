@@ -30,12 +30,6 @@
 }
 
 div#content{
-  a{
-    color: $site-dk-red;
-  }
-  a:hover{
-    color: $site-red;
-  }
   a:active{
     @include content-active;
   }

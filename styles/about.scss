@@ -11,9 +11,14 @@
   @include symbols;
 }
 
+section#bio{
+  line-height: 1.5em;
+}
+
 section#contact{
   span#glyph{font-family: 'symbols', monospace; margin-right: 15px;}
   p#name, p#email, p#lkIn, p#inst, p#twtr{
+    @include transition-base;
     margin-bottom: -.65%;
     padding-top:3px;
     padding-bottom:3px;
