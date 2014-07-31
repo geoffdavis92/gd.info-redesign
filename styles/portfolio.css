@@ -10,3 +10,5 @@ div#content a:active {
 div#content span#glyph {
   font-family: 'symbols', monospace;
   margin-right: 7px; }
+div#content p {
+  line-height: 1.5em; }

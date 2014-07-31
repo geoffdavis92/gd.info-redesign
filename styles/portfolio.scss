@@ -30,8 +30,16 @@
 }
 
 div#content{
+
   a:active{
     @include content-active;
   }
-  span#glyph{font-family: 'symbols', monospace; margin-right: 7px;}
+  
+  span#glyph{
+    font-family: 'symbols', monospace; margin-right: 7px;
+    }
+
+  p{
+    line-height:1.5em;
+    }
 }

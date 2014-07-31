@@ -31,3 +31,6 @@ aside {
 
 div#content p {
   line-height: 1.5em; }
+div#content span#alsac-source {
+  margin-left: 1%;
+  font-size: .67em; }
