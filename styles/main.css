@@ -85,15 +85,17 @@ div#content {
     color: #0b536a;
     border-color: #0b536a; }
 
-footer a {
-  color: #bbb;
-  text-decoration: none; }
-footer a:hover {
-  color: #888;
-  transition: all .37s;
-  -webkit-transition: all .37s;
-  -moz-transition: all .37s;
-  -o-transition: all .37s; }
-footer a:active {
-  border-color: #aaa234;
-  color: #aaa234; }
+footer {
+  margin-bottom: 37px; }
+  footer a {
+    color: #bbb;
+    text-decoration: none; }
+  footer a:hover {
+    color: #888;
+    transition: all .37s;
+    -webkit-transition: all .37s;
+    -moz-transition: all .37s;
+    -o-transition: all .37s; }
+  footer a:active {
+    border-color: #aaa234;
+    color: #aaa234; }
