@@ -6,16 +6,14 @@ span#pseudo4 {
   -webkit-margin-end: 0px;
   font-weight: bold; }
 
+div#content section#skills {
+  margin-top: 2.5%; }
 div#content span#glyph {
   font-family: 'symbols', monospace;
   margin-right: 7px; }
 div#content h3 {
   margin-bottom: 2.75%; }
 div#content article#html, div#content article#css, div#content article#js, div#content article#type {
-  transition: all .5s;
-  -webkit-transition: all .5s;
-  -moz-transition: all .5s;
-  -o-transition: all .5s;
   border-radius: 10px;
   padding: 5px;
   cursor: default;

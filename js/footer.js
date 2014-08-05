@@ -42,6 +42,7 @@ function createF(){
       cFL.style.marginTop = ".75%";
       cFL.style.marginBottom = ".75%";
       spacer.style.color = "transparent";
+      cFF.style.cursor = "pointer";
     //  cFA.style.color = "#bbb";
 //      cFoot.style.marginLeft = "0%";
     }

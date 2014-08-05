@@ -10,7 +10,9 @@
   <link href="../styles/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
+  <script>createH()</script>
   <div id="content">
+    <p>Thank You!</p>
   <?php
        // from the form
        $name = trim(strip_tags($_POST['name']));
@@ -35,5 +37,6 @@
        header('Location: thanks.html');
   ?>
 </div>
+<script>createF()</script>
 </body>
 </html>
