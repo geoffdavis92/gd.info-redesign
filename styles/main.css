@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Code Geoff Davis 2014 */
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic);
 @font-face {
@@ -84,6 +85,34 @@ div#content {
   div#content button:active {
     color: #0b536a;
     border-color: #0b536a; }
+
+blockquote {
+  color: #9a9a9a;
+  display: block;
+  font-style: italic;
+  border-left: 3px solid #9d2042;
+  margin: 15px 0 15px 30px;
+  padding: 0 30px 0 15px; }
+  blockquote p {
+    margin-bottom: 0px;
+    font-size: 1.1em; }
+  blockquote span#qsource {
+    font-style: normal;
+    margin: 0 0 0 45px;
+    font-size: .9em; }
+  blockquote span#qsource::before {
+    content: "— "; }
+
+blockquote p::before, blockquote p::after {
+  font-size: 1.25em;
+  font-style: normal;
+  font-family: 'Droid Serif', 'Gill Sans', serif; }
+
+blockquote p::before {
+  content: "\2018 \2018 "; }
+
+blockquote p::after {
+  content: " \2019 \2019"; }
 
 footer {
   margin-bottom: 37px; }

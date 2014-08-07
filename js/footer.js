@@ -16,7 +16,7 @@ function createF(){
 
   document.body.cFA;
   cFoot.appendChild(cFA).setAttribute("href","../gd.info-redesign/");
-  var footLink = document.createTextNode("2014 Geoffrey Davis   ");
+  var footLink = document.createTextNode("\251 2014 Geoffrey Davis   ");
   cFA.appendChild(footLink);
 
   document.body.spacer;

@@ -5,6 +5,7 @@
 // Imports Droid (Mono, Sans, Serif) from Google Fonts
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Droid+Sans+Mono|Droid+Serif:400,700,400italic);
 @import 'fonts';
+//@import 'fontcolors';
 
 // Variables
 $bg-color: #f5f5f5;
@@ -13,6 +14,7 @@ $site-dk-red: #50081C;
 $site-lt-blue: #24BAE9;
 $site-md-blue: #0B536A;
 $site-mustard: #AAA234;
+$site-gray: #9a9a9a;
 
 $content-bg: white;
 $content-color: #3b3b3b;
@@ -150,6 +152,41 @@ div#content{
     @include content-active;
   }
 }
+
+blockquote{
+  color: $site-gray;
+  display: block;
+  font-style: italic;
+  border-left: 3px solid $site-red;
+  margin: 15px 0 15px 30px;
+  padding: 0 30px 0 15px;
+  // padding: 0 30px 0 15px;
+  // margin: 15px 0 15px 0;
+  p{
+    margin-bottom: 0px;
+    font-size: 1.1em;
+  }
+  span#qsource{
+    // color: $content-color;
+    font-style: normal;
+    margin: 0 0 0 45px;
+    font-size: .9em;
+  }
+    span#qsource::before{
+      content:"— ";
+    }
+}
+  blockquote p::before,blockquote p::after{
+    font-size: 1.25em;
+    font-style: normal;
+    font-family: 'Droid Serif', 'Gill Sans', serif;
+  }
+    blockquote p::before{
+      content:"\2018 \2018 ";
+    }
+    blockquote p::after{
+      content: " \2019 \2019";
+    }
 
 // FOOTER :: nested code
 footer{
