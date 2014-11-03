@@ -16,8 +16,9 @@ aside{
 
   ul{
     text-indent: none;
-    margin-left: -16.5%;
+    /*margin-left: -16.5%;*/
     text-align: right;
+    padding-top: 5px;
 
   a{
     color: $content-color;
@@ -28,7 +29,13 @@ aside{
         border-right: transparent 3px solid;
         border-bottom: none;
         margin: 5px 0 5px 10px;
-        padding-right: 10px;
+        padding-right: 5px;
+        text-align: right;
+        width: 75px;
+
+        &:last-of-type{
+          margin-bottom: 0;
+        }
       }
       li:hover{
         @include transition-hover;

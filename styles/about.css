@@ -20,9 +20,8 @@ section#contact {
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
-    margin-bottom: -.65%;
-    padding-top: 3px;
-    padding-bottom: 3px;
+    margin: 3px 0 5px 0;
+    padding: 3px 0 3px 0;
     width: 22.5%; }
   section#contact p#phone {
     display: hidden; }
@@ -35,22 +34,24 @@ section#contact {
       color: white; }
   section#contact p#lkIn:hover {
     padding-left: 10px;
-    background-color: #0b536a;
+    background-color: #0B536A;
     color: white;
     border-radius: 10px; }
     section#contact p#lkIn:hover a {
       color: white; }
   section#contact p#inst:hover {
     padding-left: 10px;
-    background-color: #aaa234;
+    background-color: #AAA234;
     color: white;
     border-radius: 10px; }
     section#contact p#inst:hover a {
       color: white; }
   section#contact p#twtr:hover {
     padding-left: 10px;
-    background-color: #24bae9;
+    background-color: #24BAE9;
     color: white;
     border-radius: 10px; }
     section#contact p#twtr:hover a {
       color: white; }
+
+/*# sourceMappingURL=about.css.map */

@@ -23,7 +23,7 @@ div#content article#html, div#content article#css, div#content article#js, div#c
     line-height: 1.5em; }
 div#content article#html:hover {
   padding-left: 10px;
-  background-color: #9d2042;
+  background-color: #9D2042;
   color: white;
   border-radius: 10px;
   transition: all .37s;
@@ -32,7 +32,7 @@ div#content article#html:hover {
   -o-transition: all .37s; }
 div#content article#css:hover {
   padding-left: 10px;
-  background-color: #24bae9;
+  background-color: #24BAE9;
   color: white;
   border-radius: 10px;
   transition: all .37s;
@@ -41,7 +41,7 @@ div#content article#css:hover {
   -o-transition: all .37s; }
 div#content article#js:hover {
   padding-left: 10px;
-  background-color: #aaa234;
+  background-color: #AAA234;
   color: white;
   border-radius: 10px;
   transition: all .37s;
@@ -57,3 +57,5 @@ div#content article#type:hover {
   -webkit-transition: all .37s;
   -moz-transition: all .37s;
   -o-transition: all .37s; }
+
+/*# sourceMappingURL=home.css.map */

@@ -8,6 +8,12 @@ var cFF = document.createElement("a");
 
 
 function createF(){
+  $(document).ready(function(){
+  var scriptTag = document.createElement("script");
+  var body = document.getElementsByTagName('footer')[0];
+  body.appendChild(scriptTag).setAttribute('src','js/bootstrap.min.js');
+  });
+
   document.body.cFoot;
   document.body.appendChild(cFoot);
 

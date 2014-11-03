@@ -7,6 +7,10 @@
 // Portfolio
 // Resum&acutee;
 
+var head = document.getElementsByTagName('head')[0];
+var scriptTag = document.createElement('script');
+head.appendChild(scriptTag).setAttribute('src','js/jquery-2.1.1.min.js');
+
 var cHA = document.createElement("a");
 var cHead = document.createElement("header");
 var cNav = document.createElement("nav");
@@ -105,6 +109,7 @@ function createH(){
     cHead.style.fontFamily = "Droid Sans, monospace";
     cHead.style.color = "#ffffff";
     cHead.style.width = "80%";
+    cHead.style.marginTop = ".75%";
     cHead.style.marginLeft = "10%";
     cHead.style.marginRight = "10%";
     cHead.style.marginBottom = "2.5%";
